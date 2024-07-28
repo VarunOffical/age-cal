@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.date-inputs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.date-inputs input {
+    width: 25%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.date-inputs button {
+    padding: 10px;
+    border: none;
+    background-color: #7e57c2;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2rem;
+
+}
+
+.date-inputs button:hover {
+    background-color: #5e35b1;
+}
+
+.output p {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+#years, #months, #days {
+    color: #7e57c2;
+}
+
+@media only screen and (max-width: 363px)
+{
+    .date-inputs button
+    {
+        margin-top: 30%;
+    }
+}
